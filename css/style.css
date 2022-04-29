@@ -1,0 +1,78 @@
+.body-class{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 66%;
+    justify-self: center;
+    margin: 0% 16%;
+}
+.header-class{
+    width: 100%;
+    border-bottom: 1px solid black;
+    /* opacity: 0.6; */
+    margin: 2rem 10rem;
+}
+
+.navlink{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 1rem;
+}
+
+.section{
+    justify-self: center;
+    align-items: center;
+    display: flex;
+}
+
+.navlink a{
+    opacity: 0.6;
+    color: black;
+    text-decoration: none;
+}
+
+.navlink a:hover{
+    opacity: 1;
+}
+
+.footer-class{
+    padding-top: 1em;
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 2rem 10rem;
+ 
+}
+
+.form-container{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#title{
+    font-size: 3rem;
+}
+
+.main{
+    background: silver;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0rem 10rem;
+}
+
+
+.aside{
+    justify-self: right;
+}
+
+.aside img{
+    max-width:100%;
+    height: auto;
+}
+
+:root{
+    font-size: 1vw;
+}
