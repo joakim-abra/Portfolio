@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/e9c25ed873.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>
             Portfolio - Joakim Abrahamsson - Contact
         </title>
@@ -8,42 +10,47 @@
     </head>
     <body class="body-class">
         <header class="header-class">
-            <h1 id="title">Contact</h1>
+            <h1 id="title">Contact <i class="fa-solid fa-comment-dots"></i></h1>
             <nav class="navlink">
-                <a href="./index.html" target="_self"><h2>Home</h2></a>
-                <a href="./projects.html" target="_self"><h2>Projects</h2></a>
-                <a href="./contact.html" target="_self"><h2>Contact</h2></a>
+                <a href="./index.html" target="_self"><h2>Home <i class="fa-solid fa-house"></i></h2></a>
+                <a href="./projects.html" target="_self"><h2>Projects <i class="fa-solid fa-briefcase"></i></h2></a>
+                <a href="./contact.html" target="_self"><h2>Contact <i class="fa-solid fa-comment-dots"></i></h2></a>
             </nav>    
         </header>
     </br>
     <main class="main">
         <section class="section">
             <form class="form-container">
-                <select name="test" title="Choose your test">
-                    <option value="ett">ett</option>
-                    <option value="två">två</option>
-                    <option value="tre">tre</option>
+                <label for="alternativ">Choose the reason for contact:</label>
+                <select name="alternativ" title="Choose from the list">
+                    <option value="school">School assignment</option>
+                    <option value="job">Job offering</option>
+                    <option value="complaint">Complaints</option>
+                    <option value="other">Other(State below)</option>
                 </select>
                 <div>
-                <input type="radio" name="job"/>Student
-                <input type="radio" name="job"/>Teacher
-                <input type="radio" name="job"/>Organization
-                <input type="radio" name="job"/>Business
+                   <label for="job">I am:</label>
+                <input type="radio" name="job" />Student
+                <input type="radio" name="job" />Teacher
+                <input type="radio" name="job" />Organization
+                <input type="radio" name="job" />Business
                 </div>
                 <div>
                 <input type="text" name="name" placeholder="Enter your name"/>
                 </div>
                 <div>
                 <input type="email" name="email" placeholder="Enter your email"/>
-                <div>
-                <input type="textarea" name="text" placeholder="Enter your message"/>
+            </div>
+            <div>
+                <textarea name="message" placeholder="Enter your message"></textarea>
                 </div>
                 <div>
-                <input type="checkbox" name="Email">Email
-                <input type="checkbox" name="Discord">Discord
-                <input type="checkbox" name="LinkedIn">LinkedIn
+                    <label for="checkbox">Contact me by:</label>
+                <input type="checkbox" name="Telephone" />Phone
+                <input type="checkbox" name="Discord" />Discord
+                <input type="checkbox" name="LinkedIn" />LinkedIn
                 </div>
-                <div>
+                <div class="btn">
                 <input type="submit" value="Submit" title="Send your entered information"/>
                 <input type="reset" value="Reset" title="Clears entered information"/>
                 </div>
@@ -55,8 +62,8 @@
     </main>
         <footer class="footer-class">
             <nav class="navlink">
-            <a href="https://github.com/joakim-abra?tab=repositories" target="_blank"><h2>Github</h2></a>
-            <a href="http://www.linkedin.com" target="_blank"><h2>LinkedIn</h2></a>
+                <a href="https://github.com/joakim-abra?tab=repositories" target="_blank"><h2>Github <i class="fa-brands fa-github"></i></h2></a>
+                <a href="https://www.linkedin.com/in/joakim-abrahamsson-066b1921b/" target="_blank"><h2>LinkedIn <i class="fa-brands fa-linkedin"></i></h2></a>
             </nav>
         </footer>
     </body>

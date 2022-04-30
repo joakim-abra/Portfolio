@@ -1,78 +1,171 @@
+/* Gemensamma styles */
+
 .body-class{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 66%;
-    justify-self: center;
     margin: 0% 16%;
+    background: fixed no-repeat center blanchedalmond url("/Portfolio/img/test.jpg");
+    background-size: contain;
+    padding-top: 3%;
 }
 .header-class{
     width: 100%;
     border-bottom: 1px solid black;
-    /* opacity: 0.6; */
-    margin: 2rem 10rem;
+    margin: 0rem 10rem 1rem;
 }
 
+/* länkfält,topp och botten */
 .navlink{
     display: flex;
     justify-content:space-evenly;
     font-size: 1rem;
 }
 
-.section{
-    justify-self: center;
-    align-items: center;
-    display: flex;
-}
 
 .navlink a{
-    opacity: 0.6;
+    opacity: 0.7;
     color: black;
     text-decoration: none;
+    transition: 300ms ease-in-out;
 }
 
 .navlink a:hover{
     opacity: 1;
+    font-size: 1.1em;
 }
 
 .footer-class{
-    padding-top: 1em;
     border-top: 1px solid black;
     width: 100%;
-    margin: 2rem 10rem;
- 
-}
-
-.form-container{
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    margin: 1rem 10rem;
 }
 
 #title{
     font-size: 3rem;
+    opacity: 0.8;
 }
 
 .main{
-    background: silver;
+    background: rgba(255, 255, 255, 0.199);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     margin: 0rem 10rem;
 }
 
 
 .aside{
-    justify-self: right;
+    grid-column: 3/4;
 }
 
 .aside img{
     max-width:100%;
-    height: auto;
+    height: 100%;
+    opacity: 0.7;
 }
 
 :root{
     font-size: 1vw;
+    display: grid;
+    justify-content: center;
+}
+/* Begränsar maxstorlek på text men behåller den relativ för mindre upplösningar  */
+@media screen and (min-width: 1900px) {
+    :root {
+       font-size: 30px;
+    }
+  }
+
+
+  /* för contact-sidan */
+
+  .section{
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    grid-column: 2/3;
+}
+
+.form-container{
+    justify-self: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 0.9rem;
+    
+}
+
+.form-container div, label{
+    grid-column: 2/4;
+    margin: 3%;
+}
+
+.form-container select{
+    grid-column: 2/4;
+    margin-left: 3%;
+    margin-right: 1%;
+    height: 120%;
+}
+
+
+
+.form-container input[type="text"], input[type="email"], textarea{
+    height:100%;
+    width:100%;
+}
+
+.btn input[type="submit"],input[type="reset"]{
+    height:150%;
+    width:100%;
+    
+}
+
+.btn{
+    display:flex;
+    flex-direction: row;
+}
+
+/* för index och project */
+
+.section-text{
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 2/3;
+    flex-direction: column;
+    text-align: initial;
+    padding-left: 12%;
+    padding-bottom: 2em;
+    padding-right:12%;
+}
+
+/* för projectsidan */
+
+#emphasis{
+    font-size: 1.05em;
+    color: rgb(66, 4, 4);
+}
+
+
+.table{
+    /* border-style: dashed; */
+    text-align: center;
+    border-bottom-style: dashed;
+    border-spacing: 1rem;
+}
+
+
+.table th {
+    border-bottom-style: dashed;
+
+}
+/* för index */
+h6{
+    margin:0;
+}
+dd{
+    text-align: center;
 }
