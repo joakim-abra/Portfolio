@@ -73,11 +73,31 @@
     justify-content: center;
 }
 /* Begränsar maxstorlek på text men behåller den relativ för mindre upplösningar  */
+/* Sidan är testad för 3440x1440 - 1200x800 för Firefox & Edge, funkar väl halvhjärtat på mobiler.. */
 @media screen and (min-width: 1900px) {
     :root {
        font-size: 30px;
     }
+    .form-container{
+        display: grid;
+        justify-content: space-evenly; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 0.9rem; 
+    }
+
   }
+
+  @media screen and (max-width: 600px) {
+    :root {
+       font-size: 1em;
+    }
+
+    .form-container{
+        font-size: 0.9rem;  
+    }
+  }
+
+
 
 
   /* för contact-sidan */
@@ -89,15 +109,7 @@
     grid-column: 2/3;
 }
 
-.form-container{
-    justify-self: center;
-    display: grid;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 0.9rem;
-    
-}
+
 
 .form-container div, label{
     grid-column: 2/4;
@@ -111,7 +123,10 @@
     height: 120%;
 }
 
-
+.form-container input[type="radio"], input[type="checkbox"]{
+    height:0.7rem;
+    width:0.7rem;
+}
 
 .form-container input[type="text"], input[type="email"], textarea{
     height:100%;
@@ -163,9 +178,9 @@
 
 }
 /* för index */
-h6{
+.h6{
     margin:0;
 }
-dd{
+.dd{
     text-align: center;
 }
