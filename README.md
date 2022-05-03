@@ -5,5 +5,6 @@ includes:
 * semantic elements (main, header, footer, aside, section), div & span
 * input: select,option,radio,checkbox,submit,reset,form,textarea
 * a, p ,h1 ,h2 ,ul ,ol,dl,img,br,table (tr, th, td)
-* CSS - class & id
+* CSS - class & id  
+
 https://joakim-abra.github.io/Portfolio/
